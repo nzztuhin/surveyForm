@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>SurveyForm</title>
+</head>
+<body>
+    <h1 id="title" style="color: black;">Servey form</h1>
+    <P id="description"><em style="font-size: 150%;color: black;">Thank you for taking the time to help us improve the platform </em></P>
+    <form id="survey-form">
+        <section id="survey-fields">
+            <label id="name-label" for="name">Name</label>
+            <input id="name" type="text" name="name" placeholder="Enter your name" required>
+            <label id="email-label" for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="Enter your email" required>
+            <label id="number-label" for="number">Age</label>
+            <input id="number" type="number" name="number" min="5" max="100" placeholder="Age" required>
+            
+            <label for="food">Which is your favorite food?</label>
+            <select id="dropdown" name="food" form="servey-form">
+                <option>Select from here</option>
+                <option value="burger">Burger</option>
+                <option value="pizza">pizza</option>
+                <option value="french-fries">french fries</option>
+                <option value="bacon">Bacon</option>
+            </select>
+            <fieldset>
+                <label for="Sauce">What you like most with food?</label><br>
+                <input id="mayonnaise" value="mayonnaise" type="radio" name="Sauce">mayonnaise<br>
+                <input id="ketchup" value="ketchup" type="radio" name="Sauce">ketchup<br>
+                <input id="ketchup" value="Horseradish Sauce" type="radio" name="Sauce">Horseradish Sauce<br>
+            </fieldset>
+            <fieldset>
+                <label>Do have any extra preference?</label><br>
+                <input id="Bacon" value="Bacon" type="checkbox" name="Toppings">Bacon<br>
+                <input id="Extra-cheese" value="Extra-cheese" type="checkbox" name="Toppings">Extra cheese <br>
+                <input id="others" value="others" type="checkbox" name="Toppings">Others <br>
+        </fieldset>
+        <label for="comments">which is your go to place?</label>
+            <textarea id="comments" placeholder="enter a comment">
+            </textarea>
+        </section>    
+        <button id="submit">submit</button>
+    </form>
+</body>
+</html>

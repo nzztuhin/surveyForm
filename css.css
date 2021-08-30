@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+body {
+
+  background-color:lightsteelblue;
+  display: flex;
+  flex-direction: column;
+  font-family: "Raleway", Helvetica, sans-serif;
+  color: azure;
+}
+
+h1 {
+  text-align: center;
+}
+
+#description{
+  text-align: center;
+}
+form {
+  background-color: #162253;
+  height: 100%;
+  width: 40%;
+  margin: auto;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  position: relative;
+  top: 10px;
+  border-radius: 5px;
+  font-size: x-large;
+}
+
+
+#description {
+  margin-top: 5px;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+#survey-fields {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 90%;
+  padding: 20px 34px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  display: grid;
+  grid-gap: 5px;
+}
+input{
+  padding: 10px 16px;
+  font-size: x-large;
+}
+select{
+  padding: 10px 16px;
+  font-size: x-large;
+}
+
+fieldset {
+  align-items: flex-start;
+  border: 0;
+  min-width: 100%;
+}
+
+fieldset label:hover {
+  font-weight: bold;
+}
+textarea{
+  resize:vertical;
+  height: 50px;
+  font-size: x-large;
+  color: #162253;
+}
+
+#submit {
+  margin: auto;
+  background-color:rgb(21, 109, 90);
+  color: aliceblue;
+  border-radius: 8px;
+  padding: 5px 12px 5px 12px;
+  margin-top: 5px;
+  font-size: 85%;
+  box-sizing: border-box;
+  min-width: 90%;
+  
+}
